@@ -88,6 +88,20 @@ img#imgLeandroELeonardo {
     align-items: center;
 }
 
+.redes {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+}
+    .redes a {
+        color: white;
+        padding: 12px;
+        text-decoration: none;
+        color: var(--terceira-cor);
+    }
+    .redes a:hover{
+        color: var(--segunda-cor)
+    }
 .rodape{
     display: flex;
     height: 80px;
@@ -97,20 +111,16 @@ img#imgLeandroELeonardo {
 }
 
     .rodape a {
+        font-family: 'Unbounded', sans-serif;
         border-radius: 16px;
         text-decoration: none;
         padding: 12px 24px;
         background-color: var(--segunda-cor);
         color: white;
     }
-        a:hover {
+        .rodape a:hover {
             background-color: var(--segunda-cor-hover);
         }
-
-.redes-sociais{
-    text-decoration: none;
-    flex-direction: column; 
-}
 
 @media (max-width: 768px){
     .container{
@@ -119,9 +129,9 @@ img#imgLeandroELeonardo {
     .container .conteudo, .container .imgCantores{
         width: 100%;
     }
-    .container .conteudo .redes-socias a{
+    /* .container .conteudo .redes-socias a{
         width: 100%;
-    }
+    } */
     #audio{
         padding: 5%;
     }
